@@ -1,6 +1,6 @@
 #*********** Udacity Nanodegree program in Programming for Data Science using Python
 #*********** Project: Explore US Bikeshare Data
-#*********** Auther: Ahmed G. Alastal
+#*********** Auther: Ahmed G. Alastal - https://www.linkedin.com/in/ahmed-astal-b6136218b/
 #*********** GitHup Rep.: https://github.com/aalastal/Explore_US_Bikeshare_Data_Project
 
 # Import required packages
@@ -31,6 +31,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+    # A welcome message at the beginning of program startup
     print('Hello! Let\'s explore some US bikeshare data!')
     
     #Initializing an empty city variable
