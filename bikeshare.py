@@ -127,7 +127,7 @@ def load_data(city, month, day):
     #Prints the time taken to load Data
     print(f"\nThis took {(time.time() - start_time)} seconds.")
     print('-'*40)
-    
+
     #Returns the selected file as a dataframe (df) with relevant columns
     return df
 
@@ -314,10 +314,12 @@ def display_row_data(df):
 #Main function to call all functions
 def main():
     
+    # Make Forloop to Repeating the operations again
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
+        # Call Statistic Functions
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
