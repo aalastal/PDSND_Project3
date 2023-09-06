@@ -95,6 +95,8 @@ def load_data(city, month, day):
     Returns:
         df: Pandas DataFrame containing city data filtered by month and day
     """
+    start_time = time.time()
+
     #Load data for city file
     print("\nLoading data from the Excel file of {} city...".format(city.upper()))
     df = pd.read_csv(CITY_DATA[city])
@@ -122,6 +124,10 @@ def load_data(city, month, day):
         #Filter by day of week to create the new dataframe
         df = df.loc[df['day_of_week'] == day,:]
 
+    #Prints the time taken to load Data
+    print(f"\nThis took {(time.time() - start_time)} seconds.")
+    print('-'*40)
+    
     #Returns the selected file as a dataframe (df) with relevant columns
     return df
 
