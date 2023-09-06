@@ -19,4 +19,6 @@ The program was scripted using Python (version 3.10.9) and depends on the follow
 2. numpy=1.23.5
 
 ### Credits
+* [The Numpy Library documentation](https://numpy.org/doc/stable/)
+* [The Panda Library documentation](https://pandas.pydata.org/pandas-docs/stable/index.html)
 * [The Git documentation is incredibly valuable.](https://git-scm.com/doc)
